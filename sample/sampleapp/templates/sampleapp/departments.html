@@ -1,0 +1,11 @@
+<html>
+<a href="{% url 'hello' %}">Hello</a>
+      <a href="{% url 'login' %}">login</a>
+         <a href="{% url 'departments' %}">departments</a>
+   <head>
+       <h1>{{page_title}}</h1>
+   {% for i in notes %}
+   <h1>{{i}}</h1>
+     {% endfor %}
+   </head>
+</html>
